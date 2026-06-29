@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kivanc Toper | Vehicle Dynamics & Aerodynamics</title>
+    <style>
+        /* Base Styles */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #2c3e50;
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* Header Section */
+        header {
+            padding: 3rem 0 2rem;
+            border-bottom: 2px solid #e9ecef;
+            margin-bottom: 2rem;
+        }
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 0.2rem;
+            color: #1a1a1a;
+            letter-spacing: -0.5px;
+        }
+        p.subtitle {
+            font-size: 1.25rem;
+            color: #6c757d;
+            margin-top: 0;
+            font-weight: 500;
+        }
+        .contact-links a {
+            color: #0056b3;
+            text-decoration: none;
+            font-weight: 600;
+            margin-right: 15px;
+        }
+        .contact-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* About Section */
+        .about-section {
+            font-size: 1.1rem;
+            margin-bottom: 3rem;
+        }
+
+        /* Projects Section */
+        h2 {
+            font-size: 1.8rem;
+            color: #1a1a1a;
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid #e9ecef;
+            padding-bottom: 0.5rem;
+        }
+        .project {
+            background: #ffffff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.04);
+            margin-bottom: 2rem;
+            border: 1px solid #e9ecef;
+        }
+        .project h3 {
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+            color: #212529;
+            font-size: 1.4rem;
+        }
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1.2rem;
+        }
+        .tag {
+            background: #e9ecef;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            color: #495057;
+            font-weight: 500;
+        }
+
+        /* Image Scaling */
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 6px;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            border: 1px solid #dee2e6;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid #e9ecef;
+            text-align: center;
+            color: #adb5bd;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Kivanc Toper</h1>
+            <p class="subtitle">Mechanical Engineering | Vehicle Dynamics & Aerodynamics</p>
+            <p class="contact-links">
+                <a href="mailto:ktoper74@gmail.com">ktoper74@gmail.com</a>
+                <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+            </p>
+        </header>
+
+        <section class="about-section">
+            <p>I am a Mechanical Engineering student at Dartmouth College (Class of 2027) and the Vehicle Dynamics Lead for Dartmouth Formula Racing. I am currently working as an Engineering Intern at Legacy Motor Club. My core expertise lies in vehicle dynamics and aerodynamics, backed by hands-on experience in composites manufacturing, carbon fiber fabrication, and full-scale CFD analysis. While I am comfortable developing tools in Python, my primary focus is designing, simulating, and building physical aerodynamic and suspension platforms for motorsport applications.</p>
+        </section>
+
+        <section>
+            <h2>Selected Engineering Projects</h2>
+
+            <div class="project">
+                <h3>ONUK STC-20E Aerodynamics Development</h3>
+                <div class="tags">
+                    <span class="tag">Aerodynamics</span>
+                    <span class="tag">CFD</span>
+                    <span class="tag">SimScale</span>
+                    <span class="tag">CAD</span>
+                </div>
+                <p>Carried out a full computational fluid dynamics (CFD) study of the Onuk STC-20E sports car to evaluate external aerodynamics. Developed the car's underbody by designing a splitter and rear diffuser, optimizing high-speed downforce. Conducted simulations using a steady-state incompressible RANS solver with the k-w SST turbulence model, quantifying drag, downforce coefficients, and Center of Pressure (CoP) migration.</p>
+                <img src="images/onuk-stc.jpg" alt="CFD velocity magnitude simulation of the Onuk STC-20E sports car">
+            </div>
+
+            <div class="project">
+                <h3>Dartmouth Formula Racing (FSAE)</h3>
+                <div class="tags">
+                    <span class="tag">Vehicle Dynamics</span>
+                    <span class="tag">Aerodynamics</span>
+                    <span class="tag">Composites Manufacturing</span>
+                    <span class="tag">COMSOL</span>
+                </div>
+                <p>As the Aerodynamics Lead, I developed a comprehensive aero package including front and rear wings, an undertray, and sidepods designed to maximize low-speed cornering grip. Beyond aerodynamic design and COMSOL/SimScale simulations, I took full responsibility for composites manufacturing, including designing molds, executing carbon fiber layups, and vacuum bagging lightweight bodywork.</p>
+                <img src="images/dfr-aero.jpg" alt="Dartmouth Formula Racing FSAE vehicle on track">
+            </div>
+
+            <div class="project">
+                <h3>Autonomous UAV Platforms (Balaban & Martı)</h3>
+                <div class="tags">
+                    <span class="tag">Airframe Design</span>
+                    <span class="tag">Structural Engineering</span>
+                    <span class="tag">Control Systems</span>
+                </div>
+                <p>Contributed to the design and development of multiple UAV platforms. The <strong>Balaban</strong> is an autonomous platform designed for long-range (40+ km) missions, achieving a top speed of 138 km/h utilizing a CNC laser-cut birch skeletal frame. The <strong>Martı</strong> is a coastal search and rescue UAV featuring a highly modular, low-cost foam composite mainframe designed to withstand harsh, high-moisture saltwater environments.</p>
+                <img src="images/uav-platforms.jpg" alt="Balaban autonomous UAV platform">
+            </div>
+
+            <div class="project">
+                <h3>Patented Mechanical & Propulsion Systems</h3>
+                <div class="tags">
+                    <span class="tag">Mechanical Design</span>
+                    <span class="tag">Propulsion</span>
+                    <span class="tag">Thermodynamics</span>
+                </div>
+                <p>Inventor on multiple patent applications submitted to the Turkish Patent Institute, focusing on unconventional mechanical and propulsion systems:</p>
+                <ul>
+                    <li><strong>Rotary Expansion ICE (TR202103765A2):</strong> An internal combustion engine design placing pistons on a hexagonal geometry to maximize effective surface area during the combustion cycle.</li>
+                    <li><strong>Nitinol Energy Recovery Mechanism (TR2021013055):</strong> A high-torque mechanism recovering energy from high-temperature water using shape-memory Nickel-Titanium alloys.</li>
+                    <li><strong>Piezo-Electrostatic Droplet Propulsion (TR2022001490):</strong> A conceptual small-scale electric propulsion system utilizing vibrating mesh grids and a high potential difference to accelerate ionized propellant.</li>
+                </ul>
+                <img src="images/rotary-engine.jpg" alt="CAD schematic of the Rotary Expansion Internal Combustion Engine">
+            </div>
+
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Kivanc Toper. Hosted on GitHub Pages.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
